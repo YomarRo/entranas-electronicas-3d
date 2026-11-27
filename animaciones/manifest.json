@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "repo": "https://github.com/YomarRo/entranas-electronicas-3d",
+  "raw_base_url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones",
+  "gltf_playback_notes": {
+    "play_all_clips_simultaneously": true,
+    "code_pattern": "gltf.animations.forEach((clip) => { const a = mixer.clipAction(clip); a.setLoop(meta.loop ? THREE.LoopRepeat : THREE.LoopOnce, Infinity); a.clampWhenFinished = !meta.loop; a.play(); });",
+    "rule": "NEVER invent or synthesize procedural animations in Three.js. Load the exact GLB for the clicked animation button and play ALL clips in gltf.animations simultaneously using THREE.AnimationMixer."
+  },
+  "components": [
+    {
+      "component_id": "resistencia",
+      "folder": "01_Resistencia",
+      "component_name": "Resistencia 1/4W 1kΩ (Película de Carbono CFR25)",
+      "animations": [
+        {
+          "id": "resistencia_quemandose",
+          "button_label": "Quemándose (Humo y Corte)",
+          "file": "01_Resistencia/01_Resistencia_Quemandose_Humo_Corte.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/01_Resistencia/01_Resistencia_Quemandose_Humo_Corte.glb",
+          "size_kb": 2314.7,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Sobrecarga térmica real: pirólisis de la laca epoxi, humo, incandescencia al rojo vivo, arco y fractura física (circuito abierto)."
+        },
+        {
+          "id": "resistencia_electrones_carbono",
+          "button_label": "Sin Carcasa: Electrones y Calor Joule",
+          "file": "01_Resistencia/02_Resistencia_Sin_Carcasa_Electrones_Carbono.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/01_Resistencia/02_Resistencia_Sin_Carcasa_Electrones_Carbono.glb",
+          "size_kb": 1864.4,
+          "duration_sec": 15.0,
+          "loop": true,
+          "description": "Modelo de Drude real: electrones (e-) de punta a punta chocando contra átomos de carbono (C) en la espiral láser e irradiando calor por Efecto Joule."
+        },
+        {
+          "id": "resistencia_despiece",
+          "button_label": "Despiece y Materiales",
+          "file": "01_Resistencia/03_Resistencia_Desarme_Despiece_Materiales.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/01_Resistencia/03_Resistencia_Desarme_Despiece_Materiales.glb",
+          "size_kb": 2211.7,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Desarmado explosivo sin superposiciones identificando laca epoxi, carbono pirolítico, núcleo cerámico Al2O3, casquillos y terminales."
+        }
+      ]
+    },
+    {
+      "component_id": "led",
+      "folder": "02_LED",
+      "component_name": "LED 5mm Rojo (AlGaInP 630 nm)",
+      "animations": [
+        {
+          "id": "led_quemandose",
+          "button_label": "Quemándose (Sobrecorriente)",
+          "file": "02_LED/01_LED_Quemandose_Destello_Humo_Corte.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/02_LED/01_LED_Quemandose_Destello_Humo_Corte.glb",
+          "size_kb": 1775.3,
+          "duration_sec": 8.33,
+          "loop": false,
+          "description": "Sobrecorriente sin resistencia limitadora: corrimiento espectral rojo->naranja->ámbar, arco al fundirse el hilo de oro, mancha negra interna, grieta y humo."
+        },
+        {
+          "id": "led_electrones_fotones",
+          "button_label": "Sin Carcasa: Electrones, Huecos y Fotones",
+          "file": "02_LED/02_LED_Sin_Carcasa_Electrones_Fotones.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/02_LED/02_LED_Sin_Carcasa_Electrones_Fotones.glb",
+          "size_kb": 2727.8,
+          "duration_sec": 12.5,
+          "loop": true,
+          "description": "Electroluminiscencia real: electrones (e-) suben por Cátodo (-), huecos (h+) suben por Ánodo (+) y hilo de oro, se recombinan en MQW emitiendo fotones rojos de 630 nm."
+        },
+        {
+          "id": "led_despiece",
+          "button_label": "Despiece y Materiales",
+          "file": "02_LED/03_LED_Desarme_Despiece_Materiales.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/02_LED/03_LED_Desarme_Despiece_Materiales.glb",
+          "size_kb": 3143.8,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Desarmado explosivo identificando cápsula epoxi óptica, hilo de oro Au, chip AlGaInP (7 capas MQW), poste Ánodo y yunque Cátodo con copa reflectora Ag."
+        }
+      ]
+    },
+    {
+      "component_id": "diodo_1n4007",
+      "folder": "03_Diodo_1N4007",
+      "component_name": "Diodo Rectificador 1N4007 (1000 V / 1 A, DO-41)",
+      "animations": [
+        {
+          "id": "diodo_quemandose",
+          "button_label": "Quemándose (Humo y Fractura)",
+          "file": "03_Diodo_1N4007/01_Diodo_1N4007_Quemandose_Humo_Fractura.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/03_Diodo_1N4007/01_Diodo_1N4007_Quemandose_Humo_Fractura.glb",
+          "size_kb": 2952.8,
+          "duration_sec": 8.75,
+          "loop": false,
+          "description": "Embalamiento térmico por sobrecarga/ruptura: pirólisis del epoxi termoestable DO-41, humo, incandescencia, estallido con arco y fractura en dos mitades."
+        },
+        {
+          "id": "diodo_directa_inversa",
+          "button_label": "Sin Carcasa: Directa vs Bloqueo Inverso",
+          "file": "03_Diodo_1N4007/02_Diodo_1N4007_Sin_Carcasa_Directa_Inversa.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/03_Diodo_1N4007/02_Diodo_1N4007_Sin_Carcasa_Directa_Inversa.glb",
+          "size_kb": 2039.3,
+          "duration_sec": 13.33,
+          "loop": true,
+          "description": "Polarización directa (>0.7 V) conduciendo de punta a punta vs polarización inversa (1000 V) expandiendo la Zona de Agotamiento bloqueando el flujo."
+        },
+        {
+          "id": "diodo_union_pn_microscopio",
+          "button_label": "Microscopio: Unión P-N (Huecos y Electrones)",
+          "file": "03_Diodo_1N4007/03_Diodo_1N4007_Union_PN_Microscopio_Real.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/03_Diodo_1N4007/03_Diodo_1N4007_Union_PN_Microscopio_Real.glb",
+          "size_kb": 11225.5,
+          "duration_sec": 15.0,
+          "loop": true,
+          "description": "Corte transversal microscópico real del dado de silicio PIN (P+ Boro, N- 105 µm, N+ Fósforo): Equilibrio (0.7 V) -> Directa (barrera colapsa) -> Inversa (1000 V)."
+        },
+        {
+          "id": "diodo_despiece",
+          "button_label": "Despiece y Materiales",
+          "file": "03_Diodo_1N4007/04_Diodo_1N4007_Desarme_Despiece_Materiales.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/03_Diodo_1N4007/04_Diodo_1N4007_Desarme_Despiece_Materiales.glb",
+          "size_kb": 7562.5,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Desarmado explosivo identificando cápsula epoxi DO-41 + banda cátodo plata, manguito de vidrio GPP, slugs de molibdeno, dado silicio PIN y terminales."
+        }
+      ]
+    },
+    {
+      "component_id": "capacitor_electrolitico",
+      "folder": "04_Capacitor_Electrolitico",
+      "component_name": "Capacitor Electrolítico 1000 µF 25V",
+      "animations": [
+        {
+          "id": "capacitor_explosion_kvent",
+          "button_label": "Falla: Hinchamiento y Ruptura K-Vent",
+          "file": "04_Capacitor_Electrolitico/01_Capacitor_Hinchandose_KVent_Explosion_Vapor.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/04_Capacitor_Electrolitico/01_Capacitor_Hinchandose_KVent_Explosion_Vapor.glb",
+          "size_kb": 4601.9,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Polaridad invertida / sobrevoltaje: gas H2 hincha la tapa de aluminio, se abren los 4 pétalos de la válvula K-vent con electrolito marrón y chorro de vapor."
+        },
+        {
+          "id": "capacitor_laminas_carga_descarga",
+          "button_label": "Láminas Planas (90mm): Carga y Descarga",
+          "file": "04_Capacitor_Electrolitico/02_Capacitor_Sin_Carcasa_Carga_Campo_Descarga.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/04_Capacitor_Electrolitico/02_Capacitor_Sin_Carcasa_Carga_Campo_Descarga.glb",
+          "size_kb": 6973.8,
+          "duration_sec": 13.75,
+          "loop": true,
+          "description": "Láminas desenrolladas en longitud real (90×12.5 mm) con pines conectados: Fase 1 Carga -> Fase 2 Almacenamiento en Campo Eléctrico E -> Fase 3 Descarga."
+        },
+        {
+          "id": "capacitor_despiece",
+          "button_label": "Despiece y Materiales",
+          "file": "04_Capacitor_Electrolitico/03_Capacitor_Desarme_Despiece_Materiales.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/04_Capacitor_Electrolitico/03_Capacitor_Desarme_Despiece_Materiales.glb",
+          "size_kb": 8614.9,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Desarmado explosivo de 10 piezas: pines, sello EPDM, lámina ánodo Al+Al2O3, papel Kraft, lámina cátodo, cinta Kapton, bote aluminio K-vent y funda PVC."
+        }
+      ]
+    },
+    {
+      "component_id": "rele_12v",
+      "folder": "06_Rele_12V",
+      "component_name": "Relé Electromecánico 12V (SRD-12VDC-SL-C)",
+      "animations": [
+        {
+          "id": "rele_quemandose",
+          "button_label": "Quemándose (Humo y Derretimiento PBT)",
+          "file": "06_Rele_12V/01_Rele_Quemandose_Humo_Falla.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/06_Rele_12V/01_Rele_Quemandose_Humo_Falla.glb",
+          "size_kb": 8972.7,
+          "duration_sec": 9.17,
+          "loop": false,
+          "description": "Sobrevoltaje en bobina: humo por junta inferior, abombamiento y cráter fundido en carcasa azul PBT, arco al cortarse el devanado (OL) y carbonizado."
+        },
+        {
+          "id": "rele_electromagnetismo",
+          "button_label": "Sin Carcasa: Campo Magnético y Conmutación",
+          "file": "06_Rele_12V/02_Rele_Sin_Carcasa_Electromagnetismo_Conmutacion.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/06_Rele_12V/02_Rele_Sin_Carcasa_Electromagnetismo_Conmutacion.glb",
+          "size_kb": 9610.1,
+          "duration_sec": 12.5,
+          "loop": true,
+          "description": "Reposo 0V (COM->NC) -> Bobina 12V en A1/A2 genera Campo Magnético B, atrae armadura y conmuta contactos AgSnO2 a COM->NO -> Retorno por resorte."
+        },
+        {
+          "id": "rele_despiece",
+          "button_label": "Despiece y Materiales",
+          "file": "06_Rele_12V/03_Rele_Desarme_Despiece_Materiales.glb",
+          "url": "https://raw.githubusercontent.com/YomarRo/entranas-electronicas-3d/main/animaciones/06_Rele_12V/03_Rele_Desarme_Despiece_Materiales.glb",
+          "size_kb": 10500.1,
+          "duration_sec": 10.0,
+          "loop": false,
+          "description": "Desarmado explosivo de 12 piezas: carcasa PBT, resorte bronce fosforoso, actuador, carrete PA66, devanado cobre, núcleo/armadura hierro dulce, base y contactos AgSnO2."
+        }
+      ]
+    }
+  ]
+}
